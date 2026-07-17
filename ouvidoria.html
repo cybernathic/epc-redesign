@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ouvidoria EPC — Canal do Cidadão</title>
+  <meta name="description" content="Entre em contato com a Ouvidoria da EPC para registrar elogios, sugestões, reclamações ou denúncias.">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Ajustes finos do projeto -->
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Skip link (acessibilidade) -->
+  <a href="#conteudo-principal" class="visually-hidden-focusable">Ir para o conteúdo</a>
+
+  <!-- ============ MASTHEAD (barra superior institucional) ============ -->
+  <div class="masthead-bar py-1">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <span>Governo da Paraíba</span>
+      <nav aria-label="Links institucionais do governo">
+        <a href="https://paraiba.pb.gov.br/institucional/acesso-a-informacao" class="me-3" target="_blank" rel="noopener">Acesso à Informação</a>
+        <a href="ouvidoria.html" class="me-3">Ouvidoria</a>
+        <a href="https://paraiba.pb.gov.br/transparencia" target="_blank" rel="noopener">Portal da Transparência</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ============ CABEÇALHO / NAVBAR ============ -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-epc py-3" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand py-0" href="index.html">
+          <img src="assets/logo-epc.png" alt="Logo EPC Paraíba" style="height: 40px; width: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="governanca.html">Institucional</a></li>
+            <li class="nav-item"><a class="nav-link" href="diretoria.html">Diretoria</a></li>
+            <li class="nav-item"><a class="nav-link" href="lgpd.html">LGPD</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="ouvidoria.html">Ouvidoria</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ PAGE HEADER (CABEÇALHO INTERNO) ============ -->
+  <div class="page-header" style="background-image: url('https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=1600');">
+    <div class="container py-4">
+      <p class="page-eyebrow mb-1">Canal do Cidadão</p>
+      <h1 class="page-title mb-0">Ouvidoria EPC</h1>
+    </div>
+  </div>
+
+  <main id="conteudo-principal">
+
+    <!-- BREADCRUMBS -->
+    <div class="bg-light py-2 border-bottom">
+      <div class="container">
+        <nav aria-label="Caminho de navegação (Breadcrumb)">
+          <ol class="breadcrumb mb-0 small">
+            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Início</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Ouvidoria</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ============ SEÇÃO 1: SOBRE A OUVIDORIA ============ -->
+    <section class="py-5" aria-labelledby="ouvidoria-sobre-titulo">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-7">
+            <span class="text-uppercase tracking-wider small fw-bold text-success" id="ouvidoria-sobre-titulo">Atendimento e Controle</span>
+            <h2 class="h3 mt-1 mb-4 fw-bold">Sua voz na gestão da comunicação pública</h2>
+            <p>
+              A Ouvidoria da Empresa Paraibana de Comunicação (EPC) atua de forma independente e democrática, servindo como canal oficial e direto para acolher as manifestações da sociedade civil sobre a qualidade de nossos serviços administrativos, jornalísticos e radiofônicos.
+            </p>
+            <p>
+              Em conformidade com a <strong>Lei de Acesso à Informação (Lei nº 12.527/2011)</strong> e as normativas de defesa dos usuários de serviços públicos, garantimos o sigilo de sua identidade quando solicitado e acompanhamos internamente cada reclamação ou denúncia até a devolução final fundamentada.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <!-- ============ CONSULTA DE PROTOCOLO ============ -->
+            <div class="card p-4 border-0 shadow-sm bg-light">
+              <h3 class="h6 fw-bold mb-3 text-primary"><i class="bi bi-search me-2 text-success"></i>Consulte seu Protocolo</h3>
+              <p class="small text-secondary mb-3">Insira o código de registro de sua manifestação para verificar o andamento processual em tempo real.</p>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Ex: 202615070001" aria-label="Número do Protocolo">
+                <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#protocolModal">Consultar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 2: TIPOS DE MANIFESTAÇÃO ============ -->
+    <section class="py-5 bg-light border-top" aria-labelledby="tipos-manifestacao-titulo">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 id="tipos-manifestacao-titulo" class="h3 fw-bold">Tipos de Manifestação</h2>
+          <p class="text-secondary">Selecione o formato de manifestação adequado ao seu caso para agilizar o atendimento.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3">
+          
+          <!-- DENÚNCIA -->
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-3 text-center">
+              <div class="fs-1 text-danger mb-2"><i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i></div>
+              <h3 class="h6 fw-bold text-dark mb-2">Denúncia</h3>
+              <p class="small text-secondary mb-0">Comunicação de ato ilícito, irregularidade ou desvio de conduta ética por parte de colaboradores.</p>
+            </div>
+          </div>
+
+          <!-- RECLAMAÇÃO -->
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-3 text-center">
+              <div class="fs-1 text-warning mb-2"><i class="bi bi-dash-circle-fill" aria-hidden="true"></i></div>
+              <h3 class="h6 fw-bold text-dark mb-2">Reclamação</h3>
+              <p class="small text-secondary mb-0">Demonstração de insatisfação relativa a falhas em coberturas, interrupção de sinal ou atendimento.</p>
+            </div>
+          </div>
+
+          <!-- SUGESTÃO -->
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-3 text-center">
+              <div class="fs-1 text-info mb-2"><i class="bi bi-lightbulb-fill" aria-hidden="true"></i></div>
+              <h3 class="h6 fw-bold text-dark mb-2">Sugestão</h3>
+              <p class="small text-secondary mb-0">Proposta de alteração de programação, novos quadros em rádios ou pautas de jornalismo.</p>
+            </div>
+          </div>
+
+          <!-- ELOGIO -->
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-3 text-center">
+              <div class="fs-1 text-success mb-2"><i class="bi bi-heart-fill" aria-hidden="true"></i></div>
+              <h3 class="h6 fw-bold text-dark mb-2">Elogio</h3>
+              <p class="small text-secondary mb-0">Reconhecimento à equipe de jornalistas, radialistas, técnicos ou à qualidade dos conteúdos transmitidos.</p>
+            </div>
+          </div>
+
+          <!-- SOLICITAÇÃO -->
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-3 text-center">
+              <div class="fs-1 text-secondary mb-2"><i class="bi bi-info-circle-fill" aria-hidden="true"></i></div>
+              <h3 class="h6 fw-bold text-dark mb-2">Solicitação</h3>
+              <p class="small text-secondary mb-0">Pedido de prestação de informações institucionais públicas ou cópia de arquivos oficiais.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 3: FORMULÁRIO DE MANIFESTAÇÃO ============ -->
+    <section class="py-5" id="contato" aria-labelledby="form-manifestacao-titulo">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center mb-5">
+              <h2 id="form-manifestacao-titulo" class="h3 fw-bold">Registrar Nova Manifestação</h2>
+              <p class="text-secondary">Os campos marcados com * são obrigatórios para o andamento de sua solicitação.</p>
+            </div>
+
+            <div class="card border-0 shadow-sm p-4 rounded-3 bg-white border border-light">
+              <form class="needs-validation" novalidate>
+                
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    <label for="manifestanteNome" class="form-label fw-semibold text-dark small">Nome Completo *</label>
+                    <input type="text" class="form-control" id="manifestanteNome" placeholder="Ex: João da Silva" required>
+                    <div class="invalid-feedback">Por favor, insira o seu nome completo.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="manifestanteCpf" class="form-label fw-semibold text-dark small">CPF (apenas números) *</label>
+                    <input type="text" class="form-control" id="manifestanteCpf" placeholder="Ex: 00000000000" required>
+                    <div class="invalid-feedback">Insira um CPF válido para registro formal.</div>
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    <label for="manifestanteEmail" class="form-label fw-semibold text-dark small">E-mail *</label>
+                    <input type="email" class="form-control" id="manifestanteEmail" placeholder="contato@provedor.com" required>
+                    <div class="invalid-feedback">Insira um e-mail de contato válido.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="manifestacaoTipo" class="form-label fw-semibold text-dark small">Tipo de Manifestação *</label>
+                    <select class="form-select" id="manifestacaoTipo" required>
+                      <option value="" disabled selected>Escolha o tipo...</option>
+                      <option value="denuncia">Denúncia</option>
+                      <option value="reclamacao">Reclamação</option>
+                      <option value="sugestao">Sugestão</option>
+                      <option value="elogio">Elogio</option>
+                      <option value="solicitacao">Solicitação</option>
+                    </select>
+                    <div class="invalid-feedback">Selecione uma das opções acima.</div>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label for="manifestacaoMensagem" class="form-label fw-semibold text-dark small">Relato Detalhado *</label>
+                  <textarea class="form-control" id="manifestacaoMensagem" rows="5" placeholder="Descreva os fatos, locais, nomes dos envolvidos e datas para que possamos investigar a ocorrência de forma precisa." required></textarea>
+                  <div class="invalid-feedback">O detalhamento do relato é indispensável para o tratamento.</div>
+                </div>
+
+                <div class="mb-4">
+                  <label for="anexoForm" class="form-label fw-semibold text-dark small">Anexo de Apoio (opcional)</label>
+                  <input class="form-control" type="file" id="anexoForm" aria-describedby="anexoInfo">
+                  <div id="anexoInfo" class="form-text small">Fotos ou documentos que ajudem a ilustrar o ocorrido. Tamanho máximo: 5MB.</div>
+                </div>
+
+                <div class="text-end">
+                  <button type="submit" class="btn btn-primary px-4 fw-medium">
+                    Enviar Manifestação
+                  </button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RÁDIOS AO VIVO PLAYER WIDGET ============ -->
+    <section class="py-5 bg-light border-top" id="radio-ao-vivo" aria-labelledby="radio-widget-titulo">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 id="radio-widget-titulo" class="h3 fw-bold">Transmissões ao Vivo</h2>
+          <p class="text-secondary">Ouça em tempo real os veículos de radiodifusão da EPC.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div class="card h-100 border-0 shadow-sm p-4 text-center">
+              <div class="fs-1 text-success mb-2"><i class="bi bi-broadcast"></i></div>
+              <h3 class="h5 fw-bold text-primary">Rádio Parahyba FM 103.9</h3>
+              <p class="small text-secondary mb-3">Música de qualidade, notícias, cultura e programas de entretenimento paraibano.</p>
+              <div class="bg-light p-2 rounded mb-3">
+                <audio controls class="w-100" aria-label="Player Rádio Parahyba FM 103.9">
+                  <source src="http://servidor20.brlogic.com:8224/stream?type=.mp3" type="audio/mpeg">
+                  Seu navegador não suporta a execução de áudio nativa.
+                </audio>
+              </div>
+              <span class="badge bg-danger text-white py-2 px-3 align-self-center"><i class="bi bi-play-fill me-1"></i>No Ar ao Vivo</span>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5">
+            <div class="card h-100 border-0 shadow-sm p-4 text-center">
+              <div class="fs-1 text-success mb-2"><i class="bi bi-broadcast"></i></div>
+              <h3 class="h5 fw-bold text-primary">Rádio Tabajara FM 105.5</h3>
+              <p class="small text-secondary mb-3">O jornalismo mais ouvido do estado, debates, utilidade pública e transmissão esportiva.</p>
+              <div class="bg-light p-2 rounded mb-3">
+                <audio controls class="w-100" aria-label="Player Rádio Tabajara FM 105.5">
+                  <source src="http://servidor20.brlogic.com:8014/stream?type=.mp3" type="audio/mpeg">
+                  Seu navegador não suporta a execução de áudio nativa.
+                </audio>
+              </div>
+              <span class="badge bg-danger text-white py-2 px-3 align-self-center"><i class="bi bi-play-fill me-1"></i>No Ar ao Vivo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ MODAL PROTOCOLO TIMELINE ============ -->
+  <div class="modal fade" id="protocolModal" tabindex="-1" aria-labelledby="protocolModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-danger text-white">
+          <h2 class="modal-title h5 fw-bold mb-0" id="protocolModalLabel"><i class="bi bi-clock-history me-2"></i>Status da Manifestação #202615070001</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar modal"></button>
+        </div>
+        <div class="modal-body text-secondary small">
+          <p class="mb-4">Confira abaixo o histórico de movimentações da manifestação cadastrada:</p>
+          
+          <ul class="list-group list-group-flush timeline-list ps-1">
+            
+            <li class="list-group-item bg-transparent border-0 px-0 pb-3 d-flex gap-3 align-items-start">
+              <div class="fs-4 text-success mt-n1"><i class="bi bi-check-circle-fill"></i></div>
+              <div>
+                <span class="fw-bold d-block text-dark">Manifestação Registrada</span>
+                <span class="text-muted d-block small">15/07/2026 - 14:32</span>
+                <p class="mb-0 text-secondary small">Enviada com sucesso pelo portal e integrada no sistema de protocolo geral.</p>
+              </div>
+            </li>
+
+            <li class="list-group-item bg-transparent border-0 px-0 pb-3 d-flex gap-3 align-items-start">
+              <div class="fs-4 text-success mt-n1"><i class="bi bi-check-circle-fill"></i></div>
+              <div>
+                <span class="fw-bold d-block text-dark">Encaminhado para a Diretoria Executiva</span>
+                <span class="text-muted d-block small">15/07/2026 - 16:00</span>
+                <p class="mb-0 text-secondary small">Pedido distribuído internamente ao setor responsável de Rádio e Mídia Impressa.</p>
+              </div>
+            </li>
+
+            <li class="list-group-item bg-transparent border-0 px-0 pb-3 d-flex gap-3 align-items-start">
+              <div class="fs-4 text-warning mt-n1"><i class="bi bi-hourglass-split"></i></div>
+              <div>
+                <span class="fw-bold d-block text-dark">Análise Técnica e Parecer Preliminar</span>
+                <span class="text-muted d-block small">16/07/2026 - 09:15</span>
+                <span class="badge bg-warning text-dark mb-2">Em andamento</span>
+                <p class="mb-0 text-secondary small">O setor analisa as informações fornecidas para responder fundamentadamente.</p>
+              </div>
+            </li>
+
+            <li class="list-group-item bg-transparent border-0 px-0 d-flex gap-3 align-items-start opacity-50">
+              <div class="fs-4 text-muted mt-n1"><i class="bi bi-circle"></i></div>
+              <div>
+                <span class="fw-bold d-block text-muted">Emissão de Resposta Final</span>
+                <span class="text-muted d-block small">Pendente</span>
+                <p class="mb-0 text-muted small">Prazo estimado restante: 14 dias úteis.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <div class="modal-footer bg-light">
+          <button type="button" class="btn btn-secondary px-3" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER REORGANIZADO ============ -->
+  <footer class="footer-epc pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-6 col-md-3">
+          <h6>Institucional</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="governanca.html">Sobre a EPC</a></li>
+            <li class="mb-2"><a href="diretoria.html">Diretoria</a></li>
+            <li class="mb-2"><a href="governanca.html#organograma">Organograma</a></li>
+            <li class="mb-2"><a href="governanca.html#comissao">Comissão de Ética</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h6>Transparência</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="governanca.html#documentos">Licitações</a></li>
+            <li class="mb-2"><a href="governanca.html#documentos">Carta Anual</a></li>
+            <li class="mb-2"><a href="governanca.html#documentos">Normativas</a></li>
+            <li class="mb-2"><a href="lgpd.html">LGPD</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h6>Canais</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="governanca.html#historico">Jornal A União</a></li>
+            <li class="mb-2"><a href="ouvidoria.html#radio-ao-vivo">Rádio Parahyba FM</a></li>
+            <li class="mb-2"><a href="ouvidoria.html#radio-ao-vivo">Rádio Tabajara</a></li>
+            <li class="mb-2"><a href="governanca.html#documentos">Mídia Kit</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h6>Contato</h6>
+          <address class="small mb-3">
+            Av. Chesf, 451 — Distrito Industrial<br>
+            João Pessoa - PB, CEP 58082-010
+          </address>
+          <div class="d-flex gap-3 fs-5">
+            <a href="https://www.instagram.com/epcgovpb/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/epcgovpb/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.youtube.com/@epcgovpb" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="footer-bottom py-3">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>© 2026 Empresa Paraibana de Comunicação — CNPJ 09.366.790/0001-06</span>
+      <span>Redesign acadêmico · UFPB · Bootstrap 5</span>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

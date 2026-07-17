@@ -1,0 +1,287 @@
+/* ==========================================================================
+   custom.css — ajustes finos sobre o Bootstrap 5
+   Paleta e tipografia da identidade EPC, redesenhadas.
+   Regra do projeto: só usamos CSS próprio pro que o Bootstrap não cobre
+   (cores de marca, fontes, pequenos detalhes de espaçamento/sombra).
+   ========================================================================== */
+
+/* ---- Fontes ---- */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* ---- Paleta institucional (sobrescreve as variáveis do Bootstrap) ---- */
+:root {
+  --bs-primary: #1D4E89;       /* azul institucional */
+  --bs-primary-rgb: 29, 78, 137;
+  --bs-secondary: #2E2E2E;
+  --bs-light: #F6F5F1;
+  --bs-success: #1D4E89;       /* mapeia success para azul institucional */
+  --bs-success-rgb: 29, 78, 137;
+  --bs-info: #1D4E89;          /* mapeia info para azul institucional */
+  --bs-info-rgb: 29, 78, 137;
+  --bs-warning: #F4B400;       /* amarelo de apoio */
+  --bs-warning-rgb: 244, 180, 0;
+  --bs-danger: #D62828;        /* vermelho de ação */
+  --bs-danger-rgb: 214, 40, 40;
+
+  --epc-red: #D62828;          /* vermelho de ação */
+  --epc-yellow: #F4B400;       /* amarelo de apoio */
+  --epc-hero-overlay: rgba(10, 30, 60, 0.65); /* gradiente azul escuro */
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #2E2E2E;
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, .navbar-brand, .display-title {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.masthead-bar {
+  background-color: #081D33;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.masthead-bar a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.masthead-bar a:hover {
+  color: #F4B400;
+}
+
+/* ---- Navbar principal ---- */
+.navbar-epc {
+  background-color: #ffffff;
+  border-bottom: 3px solid var(--bs-primary);
+}
+
+.navbar-epc .nav-link {
+  font-weight: 500;
+  color: var(--bs-secondary);
+}
+
+.navbar-epc .nav-link:hover,
+.navbar-epc .nav-link.active {
+  color: var(--bs-primary);
+}
+
+/* ---- Hero / Carrossel com legendas reais ---- */
+.hero-carousel .carousel-item {
+  height: 62vh;
+  min-height: 380px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-carousel .carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, var(--epc-hero-overlay) 0%, rgba(10, 30, 60, 0.25) 55%, transparent 100%);
+}
+
+.hero-carousel .carousel-caption {
+  text-align: left;
+  left: 5%;
+  right: 5%;
+  bottom: 3rem;
+  z-index: 2;
+}
+
+.hero-carousel .caption-eyebrow {
+  display: inline-block;
+  background-color: var(--epc-yellow);
+  color: #1A1A1A !important;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+}
+
+.hero-carousel .caption-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2.75rem);
+  font-weight: 700;
+  max-width: 40rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* ---- Cabeçalho de Páginas Internas (Page Header) ---- */
+.page-header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 4.5rem 0;
+  color: #ffffff;
+}
+
+.page-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(10, 30, 60, 0.75) 0%, rgba(10, 30, 60, 0.60) 100%);
+  z-index: 1;
+}
+
+.page-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.page-header .page-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: var(--epc-yellow);
+  font-weight: 600;
+}
+
+.page-header .page-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.75rem, 4.5vw, 3rem);
+  font-weight: 700;
+}
+
+/* ---- Acesso rápido: cards padronizados ---- */
+.quick-access .card {
+  border: none;
+  border-radius: 0.5rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  height: 100%;
+}
+
+.quick-access .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.08);
+}
+
+.quick-access .icon-wrap {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: rgba(29, 78, 137, 0.1);
+  color: var(--bs-primary);
+  font-size: 1.4rem;
+}
+
+/* ---- Avatar Diretoria ---- */
+.avatar-circle {
+  width: 96px;
+  height: 96px;
+  background-color: var(--bs-primary);
+  color: #ffffff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem auto;
+  border: 3px solid rgba(244, 180, 0, 0.35); /* outline sutil em amarelo */
+  transition: transform 0.2s ease;
+}
+
+.card:hover .avatar-circle {
+  transform: scale(1.05);
+}
+
+/* ---- Footer reorganizado ---- */
+.footer-epc {
+  background-color: #0F2E4C;
+  color: #FFFFFF;
+}
+
+.footer-epc h6 {
+  color: #FFFFFF !important;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+}
+
+.footer-epc a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-epc a:hover {
+  color: #F4B400;
+}
+
+.footer-epc address {
+  color: #FFFFFF;
+}
+
+.footer-bottom {
+  background-color: #081D33;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+}
+
+/* ---- Acessibilidade: foco visível ---- */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--epc-yellow);
+  outline-offset: 2px;
+}
+
+/* ---- Botões e CTAs ---- */
+.btn-primary {
+  background-color: var(--epc-red) !important;
+  border-color: var(--epc-red) !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #b31d1d !important;
+  border-color: #b31d1d !important;
+  color: #ffffff !important;
+}
+
+/* CTAs e botões do carrossel */
+.hero-carousel .btn-light {
+  background-color: var(--epc-red) !important;
+  border-color: var(--epc-red) !important;
+  color: #ffffff !important;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.hero-carousel .btn-light:hover {
+  background-color: #b31d1d !important;
+  border-color: #b31d1d !important;
+  color: #ffffff !important;
+}
+
+/* ---- Personalização de Alertas (Bootstrap Overrides) ---- */
+.alert-success,
+.alert-info,
+.alert-warning {
+  background-color: rgba(244, 180, 0, 0.12) !important;
+  border-color: var(--epc-yellow) !important;
+  color: #1a1a1a !important;   /* Texto escuro para acessibilidade (WCAG AA) */
+}
+
+.alert-success i,
+.alert-info i,
+.alert-warning i,
+.alert-success strong,
+.alert-info strong,
+.alert-warning strong {
+  color: #000000 !important;   /* Contraste absoluto para elementos destacados */
+}
