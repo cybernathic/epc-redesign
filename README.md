@@ -11,12 +11,14 @@ Comparação: Antes vs. Depois
 
 Para evidenciar a modernização da interface e a melhoria na usabilidade, veja a comparação entre a versão original do portal e o novo redesign desenvolvido com Bootstrap 5:
 
-**Versão Original (Antes)**
+<h2 align="center">Versão Original (Antes):</h2>
+<p align="center">
 <img width="800" height="425" alt="image" src="https://github.com/user-attachments/assets/fb4dc215-5175-40fd-9474-506c822c2a9d" />
-
-**Novo Redesign (Depois)**
+</p>
+<h2 align="center">Versão Final (Depois):</h2>
+<p align="center">
 <img width="800" height="425" alt="image" src="https://github.com/user-attachments/assets/f5ccf042-7258-4ab1-b13d-3bb12985a90c" />
-
+</p>
 ---
 
 Objetivo do Projeto
