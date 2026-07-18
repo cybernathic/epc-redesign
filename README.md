@@ -13,8 +13,8 @@ Para evidenciar a modernização da interface e a melhoria na usabilidade, veja 
 
 | Versão Original (Antes) | Novo Redesign (Depois) |
 | :---: | :---: |
-| <img width="1600" height="850" alt="image" src="https://github.com/user-attachments/assets/fb4dc215-5175-40fd-9474-506c822c2a9d" />
- | <img width="1600" height="850" alt="image" src="https://github.com/user-attachments/assets/f5ccf042-7258-4ab1-b13d-3bb12985a90c" />
+| <img width="800" height="425" alt="image" src="https://github.com/user-attachments/assets/fb4dc215-5175-40fd-9474-506c822c2a9d" />
+ | <img width="800" height="425" alt="image" src="https://github.com/user-attachments/assets/f5ccf042-7258-4ab1-b13d-3bb12985a90c" />
  |
 ---
 
