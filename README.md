@@ -13,7 +13,8 @@ Para evidenciar a modernização da interface e a melhoria na usabilidade, veja 
 
 | Versão Original (Antes) | Novo Redesign (Depois) |
 | :---: | :---: |
-| <img src="assets/Captura-de-tela-2026-07-17-102646.png" width="100%" alt="Interface antiga do portal EPC"> | <img src="assets/site-novo.png" width="100%" alt="Nova interface com redesign funcional"> |
+| <img width="1600" height="850" alt="image" src="https://github.com/user-attachments/assets/fb4dc215-5175-40fd-9474-506c822c2a9d" />
+ | <img src="assets/site-novo.png" width="100%" alt="Nova interface com redesign funcional"> |
 ---
 
 Objetivo do Projeto
